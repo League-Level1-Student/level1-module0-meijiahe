@@ -37,26 +37,35 @@ quizWindow.add(java);
 quizWindow.pack();
 		// 6. ask a question that relates to the image
 String answer=JOptionPane.showInputDialog("You hate Java right?");
+System.out.println(answer);
 		// 7. print "CORRECT" if the user gave the right answer
-if (answer=="yes") {
+if (answer.equals("yes")) {
 	System.out.println("correct");
 }
 		// 8. print "INCORRECT" if the answer is wrong
-if (answer=="no") {
+if (answer.equals("no")) {
 	System.out.println("incorrect");
 }
 		// 9. remove the component from the quiz window (you may not see the effect of this until step 12)
-
+quizWindow.remove(java);
 		// 10. find another image and create it (might take more than one line of code)
-
+String what="https://3.bp.blogspot.com/-3u1AEe3U4t4/VJc5qLuGtDI/AAAAAAAAnuo/0YkCygRpJkk/s1600/garota%2Blerigou.jpg";
+Component bg;
+bg = createImage((what));
 		// 11. add the second image to the quiz window
-
+quizWindow.add(bg);
 		// 12. pack the quiz window
-
+quizWindow.pack();
 		// 13. ask another question
-
+String answer1=JOptionPane.showInputDialog("Do you have question of how to love java like me in that much?");
+System.out.println(answer1);
 		// 14+ check answer, say if correct or incorrect, etc.
-
+if (answer1.equals("yes")) {
+	System.out.println("correct");
+}
+if (answer1.equals("no")) {
+	System.out.println("incorrect");
+}
 	}
 
 	private static Component Component() {
