@@ -36,7 +36,7 @@ private void playSound(String fileName) {
 @Override
 public void actionPerformed(ActionEvent e) {
 	// TODO Auto-generated method stub
-	playSound(172302__sovy__ho-ho-hooo-merry-christmas.wav);
+	playSound("172302__sovy__ho-ho-hooo-merry-christmas.wav");
 }
 
 }
